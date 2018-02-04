@@ -1,9 +1,6 @@
 body {
     font: 400 15px Lato, sans-serif;
-    background-color: yellow;
-    /* background-image: url("../img/burger-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
+    background-color: rgb(219, 219, 42);
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: black;
@@ -19,8 +16,33 @@ p {
 }
 
 .btn.btn-primary {
-    width: 300px;
+    width: 100px;
     color: darkslategray;
     background-color: aquamarine;
-    font: 400 20px Lato, sans-serif;
+    font: 400 14px Lato, sans-serif;
+}
+
+.change-devour {
+    width: 100px;
+    color: darkslategray;
+    background-color: aquamarine;
+    font: 400 12px Lato, sans-serif;
+}
+
+.container-form {
+    text-align: center;
+}
+
+.container-top {
+    text-align: center;
+}
+
+#eaten {
+    background-color: white;
+    margin: 10px;
+}
+
+#not-eaten {
+    background-color: white;
+    margin: 10px;
 }

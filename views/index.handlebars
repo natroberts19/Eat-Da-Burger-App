@@ -1,13 +1,15 @@
-
+<div class="container-top">
+<img src="..assets/img/bubble-burger.png">
 <h1>Eat-Da-Burger!</h1>
+</div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <div class="row panel-row">
-<!-- Panel 1: holds the word to that is being guessed. -->
-        <div class="col-md-6">
-            <h3>Burgers Not Eaten!</h3>
+<!-- Panel 1: Burgers Not Eaten. -->
+        <div class="col-sm-6" id="not-eaten">
+          <h3>Burgers Not Eaten!</h3>
             <ul>
               {{#each burgers}}
                 {{#unless notEaten}}
@@ -16,24 +18,24 @@
               {{/each}}
             </ul>
         </div>
-
-<!-- Panel 2: holds the devoured burgers. -->
-        <div class="col-md-6">
-           <h3>Burgers Eaten!</h3>
-            <ul>
-              {{#each burgers}}
-                {{#if eaten}}
-                  {{> burgers/burger-block devoured=true}}
-                {{/if}}
-              {{/each}}
-            </ul>
+<!-- Panel 2: Burgers Eaten. -->
+            <div class="col-sm-6" id="eaten">
+              <h3>Burgers Eaten!</h3>
+                <ul>
+                  {{#each burgers}}
+                    {{#if eaten}}
+                      {{> burgers/burger-block devoured=true}}
+                    {{/if}}
+                  {{/each}}
+                </ul>
+            </div>
+          </div>
         </div>
     </div>
-    </div>
-</div>
 </div>
 
 
+<div class="container-form"
 <form class="create-form">
 
   <div class="form-group">
@@ -42,3 +44,4 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
+</div>
