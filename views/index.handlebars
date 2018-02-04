@@ -1,30 +1,44 @@
+
 <h1>Eat-Da-Burger!</h1>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row panel-row">
+<!-- Panel 1: holds the word to that is being guessed. -->
+        <div class="col-md-6">
+            <h3>Burgers Not Eaten!</h3>
+            <ul>
+              {{#each burgers}}
+                {{#unless notEaten}}
+                  {{> burgers/burger-block devoured=false}}
+                {{/unless}}
+              {{/each}}
+            </ul>
+        </div>
+
+<!-- Panel 2: holds the devoured burgers. -->
+        <div class="col-md-6">
+           <h3>Burgers Eaten!</h3>
+            <ul>
+              {{#each burgers}}
+                {{#if eaten}}
+                  {{> burgers/burger-block devoured=true}}
+                {{/if}}
+              {{/each}}
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
 
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
+    <label for="ca">Add a New Burger:</label>
     <input type="text" id="ca" name="name">
+    <button type="submit" class="btn btn-primary">Submit</button>
   </div>
-
-  <button type="submit">Add Burger</button>
-  <p>Enter a burger you want to eat! Click the Submit button!</p>
 </form>

@@ -1,0 +1,26 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    background-color: yellow;
+    /* background-image: url("../img/burger-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+}
+
+h1, h2, h3, h4 {
+    font: 400 15px Lato, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font: 400 15px Lato, sans-serif;
+}
+
+.btn.btn-primary {
+    width: 300px;
+    color: darkslategray;
+    background-color: aquamarine;
+    font: 400 20px Lato, sans-serif;
+}
