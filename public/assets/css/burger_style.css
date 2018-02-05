@@ -1,13 +1,24 @@
 body {
     font: 400 15px Lato, sans-serif;
-    background-color: rgb(219, 219, 42);
+    background-color: whitesmoke;
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: black;
 }
 
+img {
+    width: 350px;
+    height: 300px;
+}
+
+hr {
+    height: 5px;
+    color: rgb(219, 219, 42);
+    background-color: rgb(219, 219, 42);
+}
+
 h1, h2, h3, h4 {
-    font: 400 15px Lato, sans-serif;
+    font: Lato, sans-serif;
 }
 
 p {
@@ -18,31 +29,33 @@ p {
 .btn.btn-primary {
     width: 100px;
     color: darkslategray;
-    background-color: aquamarine;
+    background-color: rgb(219, 219, 42);
     font: 400 14px Lato, sans-serif;
 }
 
 .change-devour {
     width: 100px;
     color: darkslategray;
-    background-color: aquamarine;
+    background-color: rgb(219, 219, 42);
     font: 400 12px Lato, sans-serif;
 }
 
-.container-form {
+#form {
     text-align: center;
 }
 
-.container-top {
+#top {
+    margin-top: 10px;
     text-align: center;
-}
-
-#eaten {
-    background-color: white;
-    margin: 10px;
+    
 }
 
 #not-eaten {
-    background-color: white;
-    margin: 10px;
+    background-color: rgb(204, 230, 61);
+   
+}
+
+#eaten {
+    background-color: rgb(233, 223, 78);
+    
 }
