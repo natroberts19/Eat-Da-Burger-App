@@ -2,7 +2,6 @@ var express = require("express");
 var methodOverride = require("method-override");
 var bodyParser = require("body-parser");
 var path = require("path");
-var nodemon = require("nodemon");
 
 var PORT = process.env.PORT || 3000;
 
