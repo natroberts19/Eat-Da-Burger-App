@@ -4,7 +4,8 @@
   "description": "Restaurant app that allows users to track burgers they eat.",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
