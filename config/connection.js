@@ -1,6 +1,14 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-var pass = require("./keys.js");
+
+try {
+  var pass = require("./keys.js")
+ }
+ catch (e) {
+  console.log('oh no big error')
+  console.log(e)
+ }
+
 var connection;
 
 if (process.env.JAWSDB_URL) {
