@@ -1,5 +1,5 @@
 <div class="container" id="top">
-  <img src="assets/img/bubble-burger.png">
+  <img src="assets/img/burger-chef.png">
   <h1>Eat-Da-Burger!</h1>
 </div>
 <br>
@@ -18,7 +18,7 @@
             </thead>
             <tbody>
               <tr>
-                {{#each burgers}} {{#unless notEaten}} {{> burgers/burger-block devoured=false}} {{/unless}} {{/each}}
+                {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=false}} {{/unless}} {{/each}}
               </tr>
             </tbody>
           </table>
@@ -34,7 +34,7 @@
             </thead>
             <tbody>
               <tr>
-                {{#each burgers}} {{#if eaten}} {{> burgers/burger-block devoured=true}} {{/if}} {{/each}}
+                {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=true}} {{/if}} {{/each}}
               </tr>
             </tbody>
           </table>
